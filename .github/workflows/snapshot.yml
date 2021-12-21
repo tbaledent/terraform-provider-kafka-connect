@@ -32,7 +32,6 @@ jobs:
         with:
           version: latest
           args: release --snapshot --rm-dist
-          key: E8972B3841C30990E8536488110A3A5CE1B3FEB4
         env:
           GPG_FINGERPRINT: ${{ steps.import_gpg.outputs.fingerprint }}
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
