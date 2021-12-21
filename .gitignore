@@ -1,0 +1,5 @@
+!/examples/main.tf
+/examples/*
+.envrc
+.idea
+.DS_Store
