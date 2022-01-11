@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	kc "github.com/ricardo-ch/go-kafka-connect/lib/connectors"
+	kc "github.com/tbaledent/go-kafka-connect/lib/connectors"
 )
 
 func kafkaConnectorResource() *schema.Resource {
@@ -60,7 +60,7 @@ func connectorCreate(d *schema.ResourceData, meta interface{}) error {
 	if n, ok := config["name"]; ok && n != name {
 		return errors.New("config.name must be identical to the resource name")
 	} else if !ok {
-		return errors.New("config.name is the mandatory field indentical to the resource name")
+		return errors.New("config.name is the mandatory field identical to the resource name")
 	}
 
 	req := kc.CreateConnectorRequest{
