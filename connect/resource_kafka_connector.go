@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	kc "github.com/tbaledent/go-kafka-connect/lib/connectors"
+	kc "github.com/tbaledent/go-kafka-connect/v2/lib/connectors"
 )
 
 func kafkaConnectorResource() *schema.Resource {
